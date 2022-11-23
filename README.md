@@ -1,15 +1,23 @@
-## Notes on install...
+# Notes on install...
 
-# On a mac using homebrew..
+### On a mac using homebrew..
 
 brew install vips
+
 brew install fftw3
+
 brew install gsl
-brew install libtensorflow
+
+brew install tensorflow
 
 
-# For current version of fftw3 (3.3.10)
+### For current version of fftw3 (3.3.10)
 gem install numo-fftw -- --with-opt-dir=/opt/homebrew/Cellar/fftw/3.3.10_1/
 
-# Ruby tensorflow lib
-# No Tensorboard supoport yet - Parked..
+### Ruby tensorflow lib worked fine ootb.
+
+### finally
+bundle install
+
+
+##### No Tensorboard support yet - this project Parked..
