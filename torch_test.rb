@@ -39,7 +39,6 @@ class Net < Torch::NN::Module
   def initialize
     super()
     @conv1 = Torch::NN::Conv2d.new(1, 6, 5)
-    @pool = nn.MaxPool2d(2, 2)
     @conv2 = Torch::NN::Conv2d.new(6, 16, 5)
     @fc1 = Torch::NN::Linear.new(16 * 4 * 4, 120)
     @fc2 = Torch::NN::Linear.new(120, 84)
